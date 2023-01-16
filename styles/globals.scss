@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 $text-color: #e1e1e6;
+$primary-color: #5A4FCF;
+$secondary-color: #1B183F;
 
 * {
   box-sizing: border-box;
@@ -16,7 +18,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #181818;
+  background-color: #121212;
   color: $text-color;
   /* 16px */
 }
@@ -33,5 +35,6 @@ a {
   margin: 0;
   list-style: none;
   text-decoration: none;
-  color: $text-color;
+  color: $primary-color;
+  font-weight: 700;
 }

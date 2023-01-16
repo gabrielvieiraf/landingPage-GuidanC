@@ -1,8 +1,16 @@
+$text-color: #e1e1e6;
+$primary-color: #5A4FCF;
+$secondary-color: #1B183F;
+
 .container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 1rem;
+
+  h1,
+  a {
+    padding: 1rem;
+  }
 }
 
 .navMenu {
@@ -12,18 +20,23 @@
   align-items: center;
 }
 
-.mobileMenu {
+.iconActive {
   display: none;
 }
 
-.mobileButton {
+.close {
   display: none;
 }
+
 
 @media (max-width: 600px) {
 
-  .mobileButton {
+  .iconActive {
     display: block;
+    z-index: 5;
+    border: none;
+    background-color: none;
+    padding: 1rem;
   }
 
   .navMenu {
@@ -31,11 +44,19 @@
   }
 
   .mobileMenu {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: white;
+    flex-direction: column;
+    height: 100vh;
     width: 100%;
+    text-align: center;
+    background-color: #1B183F;
+
+    a {
+      color: white;
+    }
   }
+
+
 }

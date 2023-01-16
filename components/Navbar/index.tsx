@@ -23,11 +23,12 @@ const Navbar: React.FC<Props> = ({ title }) => {
         </li>
       </ul>
 
-      <button className={styles.mobileButton} onClick={() => setIsOpen(!isOpen)}>Menu</button>
+      <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars"></i></a>
 
+      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark"></i></a>
 
       {isOpen && (
-        <ul className="mobile-menu">
+        <ul className={styles.mobileMenu}>
           <li>
             <a href="/">Home</a>
           </li>
