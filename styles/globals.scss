@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 $text-color: #e1e1e6;
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -13,7 +16,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #121214;
+  background-color: #181818;
   color: $text-color;
   /* 16px */
 }

@@ -1,10 +1,13 @@
 import styles from './navbar.module.scss'
+import React, { useState } from 'react'
 
 interface Props {
   title: string;
 }
 
 const Navbar: React.FC<Props> = ({ title }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className={styles.container}>
       <h1>{title}</h1>
@@ -19,6 +22,24 @@ const Navbar: React.FC<Props> = ({ title }) => {
           <a href="/contact">Contact</a>
         </li>
       </ul>
+
+      <button className={styles.mobileButton} onClick={() => setIsOpen(!isOpen)}>Menu</button>
+
+
+      {isOpen && (
+        <ul className="mobile-menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      )}
+
     </nav>
   )
 }
