@@ -1,20 +1,42 @@
-import styles from './benefits.module.scss'
-import Student from '../Assets/images/beneficio1.png'
+import styles from "./benefits.module.scss";
+import Student from "../Assets/images/beneficio1.png";
+import React from "react";
 
 const Benefits: React.FC = () => {
-    return (
-        <section className={styles.flexbox}>
-            <div className={styles.flexitem}>
-                <img src={Student.src} alt=""/>
-                <h6>Benefit</h6>
-            </div>
-            <div className={styles.flexitem}>
-                <img src={Student.src} alt=""/>
-                <h6>Benefit</h6>
-            </div>
 
-        </section>
-    )
-}
+let listBenefits = [
+    {
+        title: "Benefit",
+        image: Student.src
+    },
+    {
+        title: "Benefit",
+        image: Student.src
+    },
+    {
+        title: "Benefit",
+        image: Student.src
+    }
+];
 
-export default Benefits
+  return (
+    <section className={styles.container}>
+      <div className={styles.flexbox}>
+        {
+            React.Children.toArray(
+                listBenefits.map(item => {
+                    return (
+                        <div className={styles.flexitem}>
+                            <img src={item.image} alt={item.title} />
+                            <h6>{item.title}</h6>
+                        </div>
+                    )
+                })
+            )
+        }
+      </div>
+    </section>
+  );
+};
+
+export default Benefits;
