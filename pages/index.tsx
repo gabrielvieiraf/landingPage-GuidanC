@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import MainContainer from '@/components/MainContainer'
 import Benefits from '@/components/Benefits'
+import Footer from '@/components/Footer'
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +17,8 @@ const Home: React.FC = () => {
 
       <Navbar title='Guidanc' />
       <MainContainer />
-      <Benefits/>
+      <Benefits />
+      <Footer title='Guidanc' />
     </>
   )
 }
