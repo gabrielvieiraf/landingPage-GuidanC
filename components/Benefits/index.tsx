@@ -6,15 +6,15 @@ const Benefits: React.FC = () => {
 
 let listBenefits = [
     {
-        title: "Benefit",
+        title: "Benefícios",
         image: Student.src
     },
     {
-        title: "Benefit",
+        title: "Benefícios",
         image: Student.src
     },
     {
-        title: "Benefit",
+        title: "Benefícios",
         image: Student.src
     }
 ];
