@@ -28,6 +28,14 @@ $secondary-color: #1B183F;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  li:hover {
+    border-bottom: 2px solid $primary-color;
+
+    a {
+      color: $text-color;
+    }
+  }
 }
 
 .iconActive {
@@ -40,6 +48,14 @@ $secondary-color: #1B183F;
 
 
 @media (max-width: 600px) {
+
+  .container {
+    padding: 0;
+  }
+
+  .logo {
+    padding-left: 5rem;
+  }
 
   .iconActive {
     display: block;
@@ -64,7 +80,8 @@ $secondary-color: #1B183F;
     height: 100vh;
     width: 100%;
     text-align: center;
-    background-color: #1B183F;
+    background-color: $secondary-color;
+    z-index: 4;
 
     a {
       color: white;

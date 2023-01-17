@@ -28,15 +28,21 @@ $secondary-color: #1B183F;
   }
 
   button {
-    max-width: 15rem;
+    max-width: 19rem;
     color: $text-color;
     display: flex;
+    align-items: center;
     padding: 0.8rem 2rem;
     background-color: $secondary-color;
     border: none;
     border-radius: 1rem;
     margin-block: 1rem;
     font-weight: 500;
+    text-transform: uppercase;
+
+    i {
+      padding-left: 1rem;
+    }
   }
 
   button:hover {
