@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
+import MainContainer from '@/components/MainContainer'
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Home: React.FC = () => {
       </Head>
 
       <Navbar title='Guidanc' />
-
+      <MainContainer />
     </>
   )
 }

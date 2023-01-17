@@ -6,10 +6,20 @@ $secondary-color: #1B183F;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-inline: 6rem;
 
   h1,
   a {
     padding: 1rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  i {
+    color: $primary-color;
   }
 }
 
@@ -36,7 +46,10 @@ $secondary-color: #1B183F;
     z-index: 5;
     border: none;
     background-color: none;
-    padding: 1rem;
+
+    i {
+      width: 100%;
+    }
   }
 
   .navMenu {

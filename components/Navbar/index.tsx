@@ -10,7 +10,10 @@ const Navbar: React.FC<Props> = ({ title }) => {
 
   return (
     <nav className={styles.container}>
-      <h1>{title}</h1>
+      <div className={styles.logo}>
+        <h1>{title}</h1>
+        <i className="fa-solid fa-mug-hot"></i>
+      </div>
       <ul className={styles.navMenu}>
         <li>
           <a href="/">Home</a>
@@ -23,9 +26,9 @@ const Navbar: React.FC<Props> = ({ title }) => {
         </li>
       </ul>
 
-      <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars"></i></a>
+      <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars fa-xl"></i></a>
 
-      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark"></i></a>
+      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark fa-xl"></i></a>
 
       {isOpen && (
         <ul className={styles.mobileMenu}>
