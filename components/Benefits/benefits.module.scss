@@ -1,0 +1,44 @@
+$text-color: #e1e1e6;
+$primary-color: #5A4FCF;
+$secondary-color: #1B183F;
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 20px 20px 34px rgba(79, 91, 255, 0.03);
+    :hover{
+        box-shadow: 10px 10px 54px rgba(106, 112, 194, 0.3)
+     }
+
+}
+
+.flexitem {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    
+    border: 1px solid #5A4FCF;
+    margin: 15px 0;
+    transition: 0.2s ease;
+
+    
+
+    img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    h6{
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #e1e1e6;
+        background-color: #5A4FCF;
+    }
+}
