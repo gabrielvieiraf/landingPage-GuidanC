@@ -22,7 +22,7 @@ const Navbar: React.FC<Props> = ({ title }) => {
           <a href="/about">About</a>
         </li> */}
         <li>
-          <a href="/contact">Entre em contato</a>
+          <a href="/contact">ENTRE EM CONTATO</a>
         </li>
       </ul>
 
@@ -33,13 +33,13 @@ const Navbar: React.FC<Props> = ({ title }) => {
       {isOpen && (
         <ul className={styles.mobileMenu}>
           <li>
-            <a href="/">Home</a>
+            <a href="/">INÍCIO</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/about">SOBRE</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/contact">ENTRE EM CONTATO</a>
           </li>
         </ul>
       )}
