@@ -3,8 +3,15 @@ import Navbar from '@/components/Navbar'
 import MainContainer from '@/components/MainContainer'
 import Benefits from '@/components/Benefits'
 import Footer from '@/components/Footer'
+import { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, [])
+
   return (
     <>
       <Head>

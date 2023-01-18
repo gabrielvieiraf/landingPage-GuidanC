@@ -15,14 +15,14 @@ const Navbar: React.FC<Props> = ({ title }) => {
         <i className="fa-solid fa-mug-hot"></i>
       </div>
       <ul className={styles.navMenu}>
-        <li>
+        {/* <li>
           <a href="/">Home</a>
         </li>
         <li>
           <a href="/about">About</a>
-        </li>
+        </li> */}
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/contact">Entre em contato</a>
         </li>
       </ul>
 
