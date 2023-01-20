@@ -76,11 +76,12 @@ $secondary-color: #1B183F;
 
   .container {
     padding: 0;
+    justify-content: space-around;
   }
 
-  .logo {
-    padding-left: 5rem;
-  }
+  // .logo {
+  //   padding-left: 5rem;
+  // }
 
   .iconActive {
     display: block;
@@ -93,9 +94,9 @@ $secondary-color: #1B183F;
     }
   }
 
-  .navMenu {
-    display: none;
-  }
+  // .navMenu {
+  //   display: none;
+  // }
 
   .mobileMenu {
     display: flex;
