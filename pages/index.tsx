@@ -20,6 +20,7 @@ const Home: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="GuidanC devs, GuidanC mentoria, GuidanC mentoria de desenvolvedores, GuidanC aula, GuidanC aula dev jr" />
         <link rel="icon" href="/favicon.ico" />
+        {/* WRONG WAY TO GET FONT-AWESOME FOR REACT */}
         <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' />
       </Head>
 
