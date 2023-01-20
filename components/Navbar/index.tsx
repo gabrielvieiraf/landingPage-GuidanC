@@ -22,13 +22,13 @@ const Navbar: React.FC<Props> = ({ title }) => {
           <a href="/about">About</a>
         </li> */}
         <li>
-          <a href="https://wa.me/5548984654553">ENTRE EM CONTATO</a>
+          <a href="https://wa.me/5548984654553" target="_blank">ENTRE EM CONTATO</a>
         </li>
       </ul>
 
-      <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars fa-xl"></i></a>
+      {/* <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars fa-xl"></i></a>
 
-      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark fa-xl"></i></a>
+      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark fa-xl"></i></a> */}
 
       {isOpen && (
         <ul className={styles.mobileMenu}>

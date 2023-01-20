@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://guidanc.com/
+
+# Sitemaps
+Sitemap: https://guidanc.com/sitemap.xml
