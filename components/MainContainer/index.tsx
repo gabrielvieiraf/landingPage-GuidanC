@@ -1,5 +1,6 @@
 import styles from './maincontainer.module.scss'
 import FlatImage from '../Assets/images/8401.jpg'
+import Image from 'next/image'
 
 const MainContainer: React.FC = () => {
 
@@ -12,7 +13,11 @@ const MainContainer: React.FC = () => {
         <button>Garanta sua vaga<i className="fa-solid fa-arrow-right"></i></button>
       </div>
       <div data-aos="fade-left" className={styles.image}>
-        <img src={FlatImage.src} alt="" />
+        <Image
+          src={FlatImage}
+          alt='FlatImage of a man siting in a egg chair using a notebook'
+          style={{ borderRadius: '2rem', width: '100%', height: 'auto' }}
+        />
       </div>
     </section>
   )
