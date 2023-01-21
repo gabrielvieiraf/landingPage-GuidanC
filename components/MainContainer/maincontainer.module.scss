@@ -11,6 +11,11 @@ $secondary-color: #1B183F;
   position: relative;
 }
 
+.icon {
+  width: 3.5rem;
+  padding-left: 1rem;
+}
+
 .box {
   width: 100%;
   max-width: 60rem;
@@ -48,10 +53,6 @@ $secondary-color: #1B183F;
     text-transform: uppercase;
     font-size: 2rem;
     justify-content: center;
-
-    i {
-      padding-left: 1rem;
-    }
   }
 
   button:hover {

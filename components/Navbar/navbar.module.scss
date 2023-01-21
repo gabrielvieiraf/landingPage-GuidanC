@@ -17,10 +17,13 @@ $secondary-color: #1B183F;
 .logo {
   display: flex;
   align-items: center;
+  flex-direction: row;
+}
 
-  i {
-    color: $primary-color;
-  }
+.icon {
+  padding-left: 1rem;
+  color: $primary-color;
+  width: 3rem;
 }
 
 .navMenu {
