@@ -21,6 +21,7 @@ const MainContainer: React.FC = () => {
           src={FlatImage}
           alt='FlatImage of a man siting in a egg chair using a notebook'
           style={{ borderRadius: '2rem', width: '100%', height: 'auto' }}
+          className={styles.img}
         />
       </div>
     </section>
