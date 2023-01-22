@@ -1,49 +1,25 @@
 import styles from './navbar.module.scss'
-import React, { useState } from 'react'
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMugHot } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
   title: string;
 }
 
 const Navbar: React.FC<Props> = ({ title }) => {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className={styles.container}>
       <div className={styles.logo}>
-        <h1>{title}</h1>
-        <i className="fa-solid fa-mug-hot"></i>
+        <h1>{title} <FontAwesomeIcon icon={faMugHot} className={styles.icon} /></h1>
       </div>
+
       <ul className={styles.navMenu}>
-        {/* <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li> */}
         <li>
           <a href="https://wa.me/5548984654553" target="_blank">ENTRE EM CONTATO</a>
         </li>
       </ul>
-
-      {/* <a className={isOpen ? styles.icon : styles.iconActive} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-bars fa-xl"></i></a>
-
-      <a className={isOpen ? styles.iconActive : styles.close} onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-xmark fa-xl"></i></a> */}
-
-      {isOpen && (
-        <ul className={styles.mobileMenu}>
-          {/* <li>
-            <a href="/">INÍCIO</a>
-          </li>
-          <li>
-            <a href="/about">SOBRE</a>
-          </li> */}
-          <li>
-            <a href="https://wa.me/5548984654553">ENTRE EM CONTATO</a>
-          </li>
-        </ul>
-      )}
-
     </nav>
   )
 }

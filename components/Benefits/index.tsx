@@ -1,21 +1,23 @@
 import styles from "./benefits.module.scss";
-import Student from "../Assets/images/beneficio1.png";
+import Benefit1 from "../Assets/images/benefit1.svg";
+import Benefit2 from "../Assets/images/benefit2.svg";
+import Benefit3 from "../Assets/images/benefit3.svg";
 import React from "react";
 
 const Benefits: React.FC = () => {
 
 let listBenefits = [
     {
-        title: "Benefícios",
-        image: Student.src
+        title: "Tempo",
+        image: Benefit1.src
     },
     {
-        title: "Benefícios",
-        image: Student.src
+        title: "Organização",
+        image: Benefit2.src
     },
     {
-        title: "Benefícios",
-        image: Student.src
+        title: "Progressão",
+        image: Benefit3.src
     }
 ];
 
@@ -26,9 +28,9 @@ let listBenefits = [
             React.Children.toArray(
                 listBenefits.map(item => {
                     return (
-                        <div className={styles.flexitem}>
-                            <img src={item.image} alt={item.title} />
-                            <h6>{item.title}</h6>
+                        <div data-aos='zoom-in' className={styles.flexitem}>
+                            <img src={item.image} alt={item.title} className={styles.icon} />
+                            <h2>{item.title}</h2>
                         </div>
                     )
                 })

@@ -1,0 +1,39 @@
+$text-color: #e1e1e6;
+$primary-color: #5A4FCF;
+$secondary-color: #1B183F;
+
+.container {
+  padding-inline: 6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  max-width: 100rem;
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.6;
+  text-align: center;
+  margin: auto;
+
+  h1 {
+    color: $primary-color;
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+}
