@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import MainContainer from '@/components/MainContainer'
+import Catch from '@/components/Catch'
 import Benefits from '@/components/Benefits'
+import About from '@/components/About'
 import Footer from '@/components/Footer'
 import { useEffect } from 'react'
 import Aos from 'aos';
@@ -27,10 +29,11 @@ const Home: React.FC = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-
       <Navbar title='Guidanc' />
       <MainContainer />
+      <Catch/>
       <Benefits />
+      <About />
       <Footer title='Guidanc' />
     </>
   )
