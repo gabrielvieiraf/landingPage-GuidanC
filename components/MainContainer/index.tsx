@@ -1,5 +1,5 @@
 import styles from './maincontainer.module.scss'
-import FlatImage from '../Assets/images/8401.jpg'
+import FlatImage from '../Assets/images/1.png'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
