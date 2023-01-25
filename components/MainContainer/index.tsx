@@ -1,5 +1,5 @@
 import styles from './maincontainer.module.scss'
-import FlatImage from '../Assets/images/8401.jpg'
+import FlatImage from '../Assets/images/1.png'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
@@ -21,6 +21,7 @@ const MainContainer: React.FC = () => {
           src={FlatImage}
           alt='FlatImage of a man siting in a egg chair using a notebook'
           style={{ borderRadius: '2rem', width: '100%', height: 'auto' }}
+          className={styles.img}
         />
       </div>
     </section>
