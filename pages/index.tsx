@@ -29,7 +29,7 @@ const Home: React.FC = () => {
       </Head>
       <Navbar title='Guidanc' />
       <MainContainer />
-      <Catch/>
+      <Catch />
       <Benefits />
       <About />
       <Footer title='Guidanc' />

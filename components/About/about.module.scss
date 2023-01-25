@@ -6,12 +6,13 @@ $secondary-color: #1B183F;
 .container {
     align-items: center;
     justify-content: center;
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+    margin: 0;
 }
 
 .box {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 4em;
@@ -19,12 +20,11 @@ $secondary-color: #1B183F;
 
 .boxitem {
     text-align: justify;
-    padding: 55px 15px;
-    border-radius: 0px;
+    padding: 5.5rem 1.5rem;
     background-color: $secondary-color;
-    margin: 10px 70px;
-    
-    p{
+    margin-block: 2rem;
+
+    p {
         padding: 9px 8px 6px 8px;
         line-height: 1.5;
         border-radius: 5px;
@@ -35,8 +35,7 @@ $secondary-color: #1B183F;
 
 .boxitemimg {
     float: left;
-    margin: 0 8% 0 2%;
-    border-radius: 2rem; 
+    margin: 0 5% 0 2%;
     width: 250px !important;
     height: auto !important;
 }
@@ -52,14 +51,14 @@ $secondary-color: #1B183F;
 
 @media (max-width: 600px) {
     .container {
-      flex-direction: column;
-      padding-block: 2rem;
-      width: 100%;
-      margin: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
-    
+
     .title {
         align-items: center;
+        margin: 0 auto;
     }
 
     .box {
@@ -67,17 +66,24 @@ $secondary-color: #1B183F;
     }
 
     .boxitemimg {
+
         width: 100%;
-        margin: 2% 0 15% 0;
+        margin: 0 auto;
+        // margin: 2% 0 15% 0;
+
     }
 
     .boxitem {
-        margin: 10px 0px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10;
+        display: flex;
+        flex-direction: column;
     }
 
     .image {
-      img {
-        width: 100%;
-      }
+        img {
+            width: 100%;
+        }
     }
-  }
+}

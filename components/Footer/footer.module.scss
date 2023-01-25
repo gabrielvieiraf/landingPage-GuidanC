@@ -14,3 +14,11 @@ $secondary-color: #1B183F;
     font-size: 4.2rem;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+
+}
